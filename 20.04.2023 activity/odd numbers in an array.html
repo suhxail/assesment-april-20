@@ -1,0 +1,22 @@
+  <!-- anonymous function -->
+
+let arr=[8,5,2,5,9,0];
+
+let odd = function () {
+  let odd= arr.filter(num => num %2 ==1)
+  console.log(odd)
+}
+odd()
+
+    <!-- IIFE -->
+
+    let a=[8,5,2,5,9,0];
+
+(function ()  {
+
+  let odd= a.filter(num => num %2 ==1);
+
+ console.log(odd)
+
+  })();
+  

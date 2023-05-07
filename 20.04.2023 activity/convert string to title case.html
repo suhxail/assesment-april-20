@@ -1,0 +1,18 @@
+<!-- anonymous function -->
+
+let str = function () {
+    let arr = "welcome to guvi zen"
+    let titlecase = arr.toLowerCase().replace(/\b(\w)/g, s => s.toUpperCase());
+    console.log(titlecase.split())
+  }
+  str()
+
+  <!-- IIFE -->
+
+  (function (str) {
+    str = str.toLowerCase().split(' ');
+    for (var i = 0; i < str.length; i++){
+      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+    }
+    console.log(str);
+    })("welcome to guvi zen")
